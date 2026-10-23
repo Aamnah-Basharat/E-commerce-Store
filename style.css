@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(233, 224, 224);
+}
+.heading {
+  text-align: center;
+  margin: 30px 0;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card img {
+  width: 100%;
+  height: 220px;
+}
+.card h3 {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.card h2 {
+  color: green;
+  font-size: 18px;
+  margin: 8px 0;
+  font-weight: bold;
+}
+.card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: rgb(8, 8, 87);
+  border-radius: 15px;
+  font-size: 15px;
+  color: white;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow:
+    0,
+    0,
+    10px rgb(231, 225, 255, 0.2);
+  margin-bottom: 30px;
+}
+.filters input[type="text"] {
+  width: 250px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+.filters select {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.price-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.price-filter label {
+  font-weight: bold;
+}
+.price-filter span {
+  color: green;
+}
+.price-filter input[type="range"] {
+  width: 200px;
+  cursor: pointer;
+}
+
+#loading {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
